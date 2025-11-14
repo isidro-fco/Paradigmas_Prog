@@ -1,7 +1,13 @@
-baseURL = 'http://example.org/'
-languageCode = 'es'
-title = 'Paradigmas de la Programación'
-theme = 'ananke'
+baseURL = "https://isidro-fco.github.io/Paradigmas_Prog/"
+languageCode = "es-es"
+title = "Paradigmas de Programación"
+theme = "ananke"
+
+relativeURLs = false
+canonifyURLs = true
+
+[publishDir]
+  directory = "public"
 
 [params]
   description = "Sitio para la materia de Paradigmas de Programación"
