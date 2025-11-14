@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Practica2 | Paradigmas de la Programación</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Practica 2: Programación Orientada a Objetos
+Isidro Francisco Pérez Paz - 377806
+
+Este documento describe la migración del sistema de biblioteca de C (estructurado) a Python (Orientado a Objetos), explicando los conceptos de POO aplicados, comparando ambas implementaciones y detallando las ventajas de la POO.
+Conceptos de POO aplicados
+¿Qué es una Clase?
+Es una plantilla o molde para crear objetos. Define las propiedades (atributos) y los comportamientos (métodos) que los objetos de esa clase tendrán.">
+    <meta name="generator" content="Hugo 0.149.1">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/practica2/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/practica2/">
+  <meta property="og:site_name" content="Paradigmas de la Programación">
+  <meta property="og:title" content="Practica2">
+  <meta property="og:description" content="Practica 2: Programación Orientada a Objetos Isidro Francisco Pérez Paz - 377806 Este documento describe la migración del sistema de biblioteca de C (estructurado) a Python (Orientado a Objetos), explicando los conceptos de POO aplicados, comparando ambas implementaciones y detallando las ventajas de la POO.
+Conceptos de POO aplicados ¿Qué es una Clase? Es una plantilla o molde para crear objetos. Define las propiedades (atributos) y los comportamientos (métodos) que los objetos de esa clase tendrán.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2025-10-17T17:18:59-08:00">
+    <meta property="article:modified_time" content="2025-10-17T17:18:59-08:00">
+
+  <meta itemprop="name" content="Practica2">
+  <meta itemprop="description" content="Practica 2: Programación Orientada a Objetos Isidro Francisco Pérez Paz - 377806 Este documento describe la migración del sistema de biblioteca de C (estructurado) a Python (Orientado a Objetos), explicando los conceptos de POO aplicados, comparando ambas implementaciones y detallando las ventajas de la POO.
+Conceptos de POO aplicados ¿Qué es una Clase? Es una plantilla o molde para crear objetos. Define las propiedades (atributos) y los comportamientos (métodos) que los objetos de esa clase tendrán.">
+  <meta itemprop="datePublished" content="2025-10-17T17:18:59-08:00">
+  <meta itemprop="dateModified" content="2025-10-17T17:18:59-08:00">
+  <meta itemprop="wordCount" content="747">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Practica2">
+  <meta name="twitter:description" content="Practica 2: Programación Orientada a Objetos Isidro Francisco Pérez Paz - 377806 Este documento describe la migración del sistema de biblioteca de C (estructurado) a Python (Orientado a Objetos), explicando los conceptos de POO aplicados, comparando ambas implementaciones y detallando las ventajas de la POO.
+Conceptos de POO aplicados ¿Qué es una Clase? Es una plantilla o molde para crear objetos. Define las propiedades (atributos) y los comportamientos (métodos) que los objetos de esa clase tendrán.">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Paradigmas de la Programación
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/contacto/" title="Contacto page">
+              Contacto
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/paradigmas_progm/" title="Paradigmas de la Programación page">
+              Paradigmas de la Programación
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Paradigmas de la Programación
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">Practica2</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2025-10-17T17:18:59-08:00">October 17, 2025</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="practica-2-programación-orientada-a-objetos"><strong>Practica 2: Programación Orientada a Objetos</strong></h1>
+<h4 id="isidro-francisco-pérez-paz---377806"><strong>Isidro Francisco Pérez Paz - 377806</strong></h4>
+<hr>
+<p>Este documento describe la migración del sistema de biblioteca de C (estructurado) a Python (Orientado a Objetos), explicando los conceptos de POO aplicados, comparando ambas implementaciones y detallando las ventajas de la POO.</p>
+<h2 id="conceptos-de-poo-aplicados"><strong>Conceptos de POO aplicados</strong></h2>
+<h3 id="qué-es-una-clase">¿Qué es una Clase?</h3>
+<p>Es una plantilla o molde para crear objetos. Define las propiedades (atributos) y los comportamientos (métodos) que los objetos de esa clase tendrán.</p>
+<ul>
+<li><strong>Ejemplo en el código:</strong> La clase <code>Libro</code> es una plantilla. Define que cualquier libro tendrá un <code>_titulo</code>, <code>_autor</code>, <code>_anio_publicacion</code>, <code>_cantidad</code>, etc., y tendrá la capacidad (método) de <code>mostrar_detalles()</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Libro</span>(ItemBiblioteca):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, id_item, titulo, cantidad, autor, anio_publicacion, genero):
+</span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span>(id_item, titulo, cantidad)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_autor <span style="color:#f92672">=</span> autor
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_anio_publicacion <span style="color:#f92672">=</span> anio_publicacion
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_genero <span style="color:#f92672">=</span> genero
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mostrar_detalles</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># ... implementación ...</span>
+</span></span></code></pre></div><h3 id="qué-es-un-objeto">¿Qué es un Objeto?</h3>
+<p>Es una instancia de una clase. Es una entidad concreta creada a partir de la plantilla (clase) que existe en la memoria y tiene sus propios valores para los atributos definidos por la clase.</p>
+<ul>
+<li><strong>Ejemplo en el código:</strong> Cuando el administrador registra un libro, se crea un objeto de la clase <code>Libro</code> con datos específicos. <code>libro1</code> y <code>libro2</code> son objetos diferentes (instancias) de la misma clase <code>Libro</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#75715e"># En la función biblioteca.registrar_libro()</span>
+</span></span><span style="display:flex;"><span>libro <span style="color:#f92672">=</span> Libro(<span style="color:#e6db74">&#34;101&#34;</span>, <span style="color:#e6db74">&#34;Cien Años de Soledad&#34;</span>, <span style="color:#ae81ff">10</span>, <span style="color:#e6db74">&#34;G. García Márquez&#34;</span>, <span style="color:#ae81ff">1967</span>, <span style="color:#e6db74">&#34;Realismo Mágico&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># &#39;libro&#39; es un objeto.</span>
+</span></span></code></pre></div><h3 id="qué-es-el-encapsulamiento">¿Qué es el Encapsulamiento?</h3>
+<p>Es el principio de ocultar el estado interno y la lógica de un objeto al mundo exterior, exponiendo solo una interfaz pública (métodos) para interactuar con él. Protege los datos de modificaciones indebidas.</p>
+<ul>
+<li><strong>Ejemplo en el código:</strong> La clase <code>Biblioteca</code> encapsula las listas <code>_items</code> y <code>_usuarios</code>. El código del menú principal no accede directamente a <code>biblioteca._items.append(...)</code>. En su lugar, llama al método público <code>biblioteca.registrar_libro()</code>. Esto permite a la clase <code>Biblioteca</code> realizar validaciones (como chequear IDs duplicados) antes de añadir el ítem. El uso del guion bajo (<code>_items</code>) es una convención en Python para indicar que un atributo es &ldquo;privado&rdquo; o interno.</li>
+</ul>
+<h3 id="qué-es-la-abstracción">¿Qué es la Abstracción?</h3>
+<p>Consiste en mostrar solo las características esenciales de un objeto, ocultando los detalles complejos de su implementación. La clase ItemBiblioteca es una abstracción.</p>
+<ul>
+<li><strong>Ejemplo en el código:</strong> Se definió una &ldquo;Clase Base Abstracta&rdquo; (ABC) llamada <code>ItemBiblioteca</code>. Esta clase decreta que cualquier ítem en la biblioteca (sea un libro, revista, o futuro DVD) debe tener un método <code>mostrar_detalles()</code>. Al código principal (como el método <code>mostrar_items</code> de la biblioteca) no le importa cómo un libro o una revista muestran sus detalles, solo sabe que puede llamar a <code>item.mostrar_detalles()</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ItemBiblioteca</span>(ABC):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ...</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@abstractmethod</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mostrar_detalles</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">pass</span> <span style="color:#75715e"># Fuerza a las subclases a implementar esto</span>
+</span></span></code></pre></div><h3 id="qué-es-la-herencia">¿Qué es la Herencia?</h3>
+<p>Es un mecanismo que permite a una clase (subclase o clase hija) heredar atributos y métodos de otra clase (superclase o clase padre). Esto promueve la reutilización de código.</p>
+<ul>
+<li><strong>Ejemplo en el código:</strong> Tanto <code>Libro</code> como <code>Revista</code> son tipos de <code>ItemBiblioteca</code>. En lugar de repetir el código para <code>_id_item</code>, <code>_titulo</code>, <code>_cantidad</code>, <code>prestar()</code> y <code>devolver()</code> en ambas clases, estas propiedades y métodos se definen una vez en <code>ItemBiblioteca</code> y ambas clases hijas los heredan.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Libro</span>(ItemBiblioteca): <span style="color:#75715e"># Libro HEREDA DE ItemBiblioteca</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ...</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Revista</span>(ItemBiblioteca): <span style="color:#75715e"># Revista HEREDA DE ItemBiblioteca</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ...</span>
+</span></span></code></pre></div><h3 id="qué-es-el-polimorfismo">¿Qué es el Polimorfismo?</h3>
+<p>Literalmente &ldquo;muchas formas&rdquo;. Es la capacidad de los objetos de diferentes clases de responder al mismo mensaje (llamada de método) de maneras diferentes.</p>
+<ul>
+<li><strong>Ejemplo en el código:</strong> La herencia nos da el polimorfismo. Tenemos una lista de <code>ItemBiblioteca</code> que contiene objetos <code>Libro</code> y objetos <code>Revista</code>. Cuando iteramos sobre la lista y llamamos <code>item.mostrar_detalles()</code>:
+<ul>
+<li>Si <code>item</code> es un <code>Libro</code>, se ejecuta el <code>mostrar_detalles()</code> de <code>Libro</code> (mostrando autor y género).</li>
+<li>Si <code>item</code> es una <code>Revista</code>, se ejecuta el <code>mostrar_detalles()</code> de <code>Revista</code> (mostrando editorial y número).
+El método <code>biblioteca.mostrar_items()</code> usa polimorfismo sin siquiera saber el tipo específico de cada ítem.</li>
+</ul>
+</li>
+</ul>
+<h2 id="conclusión"><strong>Conclusión</strong></h2>
+<p>Usar la Programación Orientada a Objetos (POO) en este proyecto de biblioteca fue una gran ventaja porque hizo que el código fuera mucho más fácil de mantener, actualizar y entender que la versión anterior.
+Gracias a la POO, el código está mejor organizado porque modela el mundo real (hay objetos para Libros, Usuarios y la Biblioteca misma). Esto hace que sea mucho más fácil añadir nuevos tipos de elementos, como revistas o DVDs, sin tener que duplicar código, lo que se conoce como escalabilidad. Además, esta organización reduce drásticamente la cantidad de errores y fallos en el programa. Finalmente, el proceso de guardar y cargar los datos es más seguro y robusto.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/" >
+    &copy;  Paradigmas de la Programación 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,3 +1,8 @@
++++
+date = '2025-09-26T17:18:59-08:00'
+draft = false
+title = 'Practica1'
++++
 # **Práctica 1: Elementos básicos de los lenguajes de programación**
 El objetivo de esta práctica es identificar los elementos fundamentales de los lenguajes de programación: nombres, marcos de activación, bloques de alcance, administración de memoria, expresiones, comandos, control de secuencia como lo es; selección iteración y recursión, subprogramas, y tipos de datos.
 Identificar estos conceptos en la aplicación propuesta para esta práctica.

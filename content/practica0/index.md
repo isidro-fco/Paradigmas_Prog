@@ -1,3 +1,8 @@
++++
+date = '2025-09-11T17:18:59-08:00'
+draft = false
+title = 'Practica0'
++++
 # Práctica 0: Uso de repositorios
 ###### Isidro Francisco Perez Paz - 377806
 ---

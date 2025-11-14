@@ -1,3 +1,8 @@
++++
+date = '2025-10-17T17:18:59-08:00'
+draft = false
+title = 'Practica2'
++++
 # **Practica 2: Programación Orientada a Objetos**
 #### **Isidro Francisco Pérez Paz - 377806**
 ---

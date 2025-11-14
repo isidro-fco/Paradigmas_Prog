@@ -1,0 +1,21 @@
+baseURL = 'http://example.org/'
+languageCode = 'es'
+title = 'Paradigmas de la Programación'
+theme = 'ananke'
+
+[params]
+  description = "Sitio para la materia de Paradigmas de Programación"
+
+[menu]
+  [[menu.main]]
+    identifier = "contacto"
+    name = "Contacto"
+    title = "contacto"
+    url = "/contacto/"
+    weight = 0
+  [[menu.main]]
+    identifier = "paradigmas_progm"
+    name = "Paradigmas de la Programación"
+    title = "paradigmas_progm"
+    url = "/paradigmas_progm/"
+    weight = 0

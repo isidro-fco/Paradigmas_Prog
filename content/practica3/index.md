@@ -1,3 +1,8 @@
++++
+date = '2025-11-07T17:18:59-08:00'
+draft = false
+title = 'Practica3'
++++
 # **Práctica 3: Haskell**
 #### **Isidro Francisco Pérez Paz - 377806**
 ---
