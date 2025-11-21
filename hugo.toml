@@ -6,8 +6,7 @@ theme = "ananke"
 relativeURLs = false
 canonifyURLs = true
 
-[publishDir]
-  directory = "public"
+publishDir = "docs"
 
 [params]
   description = "Sitio para la materia de Paradigmas de Programación"

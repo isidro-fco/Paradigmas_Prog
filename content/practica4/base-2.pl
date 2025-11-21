@@ -1,8 +1,3 @@
-girl(priya).
-girl(natasha).
-girl(jasmin).
-can_cook(priya).
-
 sing_a_song(ana).
 listens_to_music(rodrigo).
 

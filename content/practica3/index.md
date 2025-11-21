@@ -15,7 +15,7 @@ Para poder utilizar *Haskell*:
 
 2. **Pulsa en el recuadro morado "[GHCup](https://www.haskell.org/ghcup/ "GHCup")"**
    Ya dentro copia el comando que aparece aqui: 
-   ![](img/img2.png )
+   ![](img/img2.png)
 
 3. **Dirigete a *PowerShell* pegalo, ejecutalo y instala todo**
    **Nota:** no lo ejecutes como administrador.
